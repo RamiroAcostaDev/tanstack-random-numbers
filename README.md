@@ -1,27 +1,27 @@
-# React + TypeScript + Vite
+# 🔁 TanStack Query Practice - Random Number Fetcher
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositorio contiene una práctica sencilla que demuestra cómo utilizar **TanStack Query (antes React Query)** para realizar peticiones HTTP de forma eficiente, limpia y reutilizable.
 
-Currently, two official plugins are available:
+## 🧪 ¿De qué se trata?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Se trata de una app construida como ejercicio de aprendizaje, en la que se realiza una **petición GET a una API que devuelve números aleatorios**. El objetivo principal fue evidenciar cómo **TanStack Query** permite refactorizar el código y reducir la lógica repetida, en comparación con enfoques tradicionales con `useEffect` y `useState`.
 
-## Expanding the ESLint configuration
+## 🚀 Funcionalidad
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- Al cargar la app, se realiza una petición para obtener un número aleatorio desde una URL externa.
+- Ese número se muestra en pantalla.
+- Un botón permite **disparar una nueva petición** para obtener otro número random.
 
-- Configure the top-level `parserOptions` property like this:
+## 🧰 Tecnologías utilizadas
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+- ⚛️ React
+- 🔁 [TanStack Query](https://tanstack.com/query/latest) (React Query)
+- 🌐 API de números aleatorios (simulada o real, según configuración)
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## 💡 Objetivo del proyecto
+
+El propósito de esta práctica es:
+
+- Comprender el flujo de peticiones y manejo de datos con **TanStack Query**.
+- Comparar contra métodos tradicionales (`fetch`, `axios` + `useEffect`).
+- Reforzar conceptos de cacheo, refetching y manejo del estado de carga/error.
